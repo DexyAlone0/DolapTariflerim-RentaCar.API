@@ -1,0 +1,17 @@
+
+<div class="col-md-12 text-center">
+    
+    <br>
+    <h3>Tüm arabalar : </h3> 
+</div>
+<hr>
+<input type="checkbox" name="All" [(ngModel)]="manuelIsChecked" (change)="gearTypeFilter()"/> Manuel
+<input type="checkbox" name="All" [(ngModel)]="otomatikIsChecked" (change)="gearTypeFilter()"> Otomatik 
+
+<br>
+<div class="row row-cols-3">
+<div *ngFor="let item of items"> 
+        <app-car-detail [item]="item"></app-car-detail>
+</div>
+</div>
+

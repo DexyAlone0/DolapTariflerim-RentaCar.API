@@ -1,0 +1,71 @@
+<div class="col">
+  <div class="card">
+    <div class="col-lg-12 mx-30">
+      <div class="row">
+        <div class="col-lg-4"><h5 class="card-title" style="margin-top:10px;">{{item?.brandName}}
+            | {{item?.modelName}}</h5> </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-2">
+          <div class="col-lg-12"> <img
+              src="https://dokay.com.tr/assets/img/fuel.svg" width="25"
+              height="25" /></div>
+          <div class="col-lg-12"><strong>{{item?.fuelTypeName}}</strong></div>
+        </div>
+        <div class="col-lg-2">
+          <div class="col-lg-12"> <img
+              src="https://dokay.com.tr/assets/img/gear.svg" width="25"
+              height="25" /></div>
+          <div class="col-lg-12"><strong>{{item?.gearTypeName}}</strong></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <app-image-viewer></app-image-viewer>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted">{{item?.createdDate}}</small></p>
+    </div>
+    <div class="card-footer">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col-lg-12"><img
+                src="https://dokay.com.tr/assets/img/date.svg" width="25"
+                height="25" alt></div>
+            <div class="col-lg-12">Minimum<br>25 Yaş</div> </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col-lg-12"><img
+                src="https://dokay.com.tr/assets/img/id.svg" width="25"
+                height="25" alt></div>
+            <div class="col-lg-12">5 Yıllık<br>Ehliyet</div>
+          </div> </div>
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col-lg-12"><img
+                src="https://dokay.com.tr/assets/img/credit_card.svg" width="25"
+                height="25" alt></div>
+            <div class="col-lg-12">1 Kredi<br>Kartı</div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col-lg-12"><img
+                src="https://dokay.com.tr/assets/img/credit_card_lock.svg"
+                width="25" height="25" alt></div>
+            <div class="col-lg-12">2500 TL<br>Teminat Tutarı</div>
+            <div>
+              <!-- Diğer içerikler burada olabilir -->
+              <button class="btn btn-primary" [routerLink]="['/car-info', item?.carId]">Car Info</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
