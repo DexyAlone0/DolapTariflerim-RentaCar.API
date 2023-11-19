@@ -1,0 +1,58 @@
+<div class="form-group">
+  <div class="text-center"><h3>Marka seçin.</h3></div>
+  <label for="exampleFormControlSelect1"></label>
+  <select class="form-control" [(ngModel)]="carCreateRequest.brandId">
+    <option value="{{ brand.id }}" *ngFor="let brand of brands">
+      {{ brand.name }}
+    </option>
+  </select>
+  <br />
+  <br />
+  <div class="text-center"><h3>Model seçin.</h3></div>
+
+  <br />
+  <input class="form-control" type="text" [(ngModel)]="carCreateRequest.name" />
+  <br>
+  <div class="text-center"><h3>Yakıt türünü seçin.</h3></div>
+  <select class="form-control" [(ngModel)]="carCreateRequest.fuelTypeId">
+    <option value="1">Benzin</option>
+    <option value="2">Dizel</option>
+    <option value="3">LPG</option>
+  </select>
+<br>
+  <div class="text-center"><h3>Kasa tipini seçin.</h3></div>
+  <select class="form-control" [(ngModel)]="carCreateRequest.caseTypeId">
+    <option value="1">Sedan</option>
+    <option value="2">Hatchback</option>
+  </select>
+<br>
+  <div class="text-center"><h3>Koltuk sayısını seçin.</h3></div>
+  <select class="form-control" [(ngModel)]="carCreateRequest.countOfSeats">
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+
+  </select>
+<br>
+  <div class="text-center"><h3>Vites tipini seçin.</h3></div>
+  <select class="form-control" [(ngModel)]="carCreateRequest.gearTypeId">
+    <option value="1">Otomatik</option>
+    <option value="2">Manuel</option>
+  </select>
+  <br>
+  <div class="text-center">
+    <input type="file" class="file-upload" (change)="onFileSelected($event)">
+  </div>
+  <button (click)="saveCar()" type="button" class="form-control">Kaydet</button>
+
+  <!-- <select class="form-control" [(ngModel)]="modelSelect">
+    <option value="{{ model.id }}" *ngFor="let model of models">
+      {{ model.name }}
+    </option>
+
+    Marka adı(brand) değiştiği zaman ona göre modelleri getiren kod (change)="brandChange()"
+  </select> -->
+</div>

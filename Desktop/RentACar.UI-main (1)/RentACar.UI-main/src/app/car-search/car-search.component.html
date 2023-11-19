@@ -1,0 +1,46 @@
+
+ <div style="text-align: center;" [style.display]="item ==null ? 'none' : 'block'">
+
+  <div class="row">
+<div class="col-md-6">
+  <app-image-viewer></app-image-viewer>
+</div>
+  <div class="col-md-6">
+    <div class="table-cont">
+    <table class="table table-bordered bg-white">
+    <thead>
+    <tr>
+    <th colspan="2">
+    <h4 class="tech">Teknik Özellikler</h4>
+    </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <th scope="row">Marka</th>
+    <td>{{ item?.brandName }} </td>
+    </tr>
+
+
+    <tr>
+    <th scope="row">Yakıt Tipi</th>
+    <td> {{item?.fuelTypeName}}</td>
+    </tr>
+    <tr>
+    <th scope="row">Vites Tipi</th>
+    <td> {{item?.gearTypeName}} </td>
+    </tr>
+
+    </tbody>
+    </table>
+    </div>
+    </div>
+</div>
+</div>
+    <div class="input-group mb-3" style="width: 300px; margin: 0 auto;">
+        <input type="text" class="form-control" [(ngModel)]="carId"
+            placeholder="Id">
+        <div class="input-group-append">
+            <button class="btn btn-primary" (click)="getByCarId(carId)">Ara</button>
+        </div>
+    </div>

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+hr {
+    color: black; /* Renk kodunu değiştirerek farklı bir renk seçebilirsiniz */
+    background-color: black; /* Arkaplan rengi */
+    height: 3px; /* Çizgi kalınlığı (isteğe bağlı, istediğiniz kalınlığı belirleyebilirsiniz) */
+    border: none; /* Çizgi etrafındaki kenarlık (varsayılan olarak sıfır olarak ayarlanır) */
+    width: 350px;
+    margin: 0px auto;
+}
+/* Bootstrap ile uyumsuzlukları önlemek için appearance özelliğini sıfırla */
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
