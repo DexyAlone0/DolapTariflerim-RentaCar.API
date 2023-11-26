@@ -1,0 +1,67 @@
+<div style="text-align: center">
+  <div class="row">
+    <div class="col-md-6">
+      <app-image-viewer></app-image-viewer>
+    </div>
+    <div class="col-md-6">
+      <div class="table-cont">
+        <table class="table table-bordered bg-white">
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h4 class="tech">Teknik Özellikler</h4>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Marka</th>
+              <td>{{ model?.brandName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Model</th>
+              <td>{{ model?.name }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Yakıt Tipi</th>
+              <td>{{ model?.fuelTypeName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Vites Tipi</th>
+              <td>{{ model?.gearTypeName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Modeller</th>
+              <td>
+                <select
+                  class="form-control"
+
+                  [(ngModel)]="item.modelId"
+                  (change)="onChangeModel()"
+                >
+                  <option value="{{ model.id }}" *ngFor="let model of models">
+                    {{ model.name }}
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Yıl</th>
+              <td>
+              <input class="form-control" type="text" [(ngModel)]="item.year">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Klima</th>
+              <td><input type="checkbox" [(ngModel)]="item.hesAirConditioning"></td>
+            </tr>
+            <tr>
+              <th></th>
+              <td><button class="btn btn-primary" type="button" (click)="updateCar()">Güncelle</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
