@@ -1,0 +1,14 @@
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\bin\Debug\net6.0\TnActivationCore.Repository.Mssql.deps.json
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\bin\Debug\net6.0\TnActivationCore.Repository.Mssql.dll
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\bin\Debug\net6.0\TnActivationCore.Repository.Mssql.pdb
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\bin\Debug\net6.0\TnActivationCore.Repository.Mssql.xml
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.csproj.AssemblyReference.cache
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.AssemblyInfoInputs.cache
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.AssemblyInfo.cs
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.csproj.CoreCompileInputs.cache
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.dll
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\refint\TnActivationCore.Repository.Mssql.dll
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.xml
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\TnActivationCore.Repository.Mssql.pdb
+C:\Users\Berkay\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\obj\Debug\net6.0\ref\TnActivationCore.Repository.Mssql.dll

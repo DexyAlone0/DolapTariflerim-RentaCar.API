@@ -1,0 +1,5 @@
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Data\obj\Debug\net6.0\YemekTarifGenerator.Data.csproj.AssemblyReference.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Data\obj\Debug\net6.0\YemekTarifGenerator.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Data\obj\Debug\net6.0\YemekTarifGenerator.Data.AssemblyInfoInputs.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Data\obj\Debug\net6.0\YemekTarifGenerator.Data.AssemblyInfo.cs
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Data\obj\Debug\net6.0\YemekTarifGenerator.Data.csproj.CoreCompileInputs.cache

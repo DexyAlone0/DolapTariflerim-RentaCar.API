@@ -1,0 +1,14 @@
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\bin\Debug\net6.0\YemekTarifGenerator.Common.deps.json
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\bin\Debug\net6.0\YemekTarifGenerator.Common.runtimeconfig.json
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\bin\Debug\net6.0\YemekTarifGenerator.Common.dll
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\bin\Debug\net6.0\YemekTarifGenerator.Common.pdb
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.csproj.AssemblyReference.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.AssemblyInfoInputs.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.AssemblyInfo.cs
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.csproj.CoreCompileInputs.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.dll
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\refint\YemekTarifGenerator.Common.dll
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.pdb
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\YemekTarifGenerator.Common.genruntimeconfig.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Common\obj\Debug\net6.0\ref\YemekTarifGenerator.Common.dll

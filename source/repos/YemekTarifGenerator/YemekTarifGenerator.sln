@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifGenerator", "YemekTarifGenerator\YemekTarifGenerator.csproj", "{D7EC8CD1-DBF8-48CC-AA67-9C8C0E05EDC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifGenerator.Application", "YemekTarifGenerator.Application\YemekTarifGenerator.Application.csproj", "{A5380E4B-C022-4FF1-8B27-ABD24D3C0E65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifGenerator.Common", "YemekTarifGenerator.Common\YemekTarifGenerator.Common.csproj", "{B25853FB-A5A9-47C2-9DC5-35AB5BBDD86D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifGenerator.Contract", "YemekTarifGenerator.Contract\YemekTarifGenerator.Contract.csproj", "{EDA3C443-9D1C-481F-8DEC-4EE419FB02D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifGenerator.Data", "YemekTarifGenerator.Data\YemekTarifGenerator.Data.csproj", "{C4A3852A-BD6E-4F37-826D-645EFA869719}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifGenerator.Domain", "YemekTarifGenerator.Domain\YemekTarifGenerator.Domain.csproj", "{17DFB5DB-2AB8-4AAB-B3F3-193FD1531F2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TnActivationCore.Repository.Mssql", "..\..\..\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\TnActivationCore.Repository.Mssql.csproj", "{B12E6819-D87A-4D05-A40B-5B3B15EAC1B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7EC8CD1-DBF8-48CC-AA67-9C8C0E05EDC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EC8CD1-DBF8-48CC-AA67-9C8C0E05EDC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EC8CD1-DBF8-48CC-AA67-9C8C0E05EDC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EC8CD1-DBF8-48CC-AA67-9C8C0E05EDC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5380E4B-C022-4FF1-8B27-ABD24D3C0E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5380E4B-C022-4FF1-8B27-ABD24D3C0E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5380E4B-C022-4FF1-8B27-ABD24D3C0E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5380E4B-C022-4FF1-8B27-ABD24D3C0E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25853FB-A5A9-47C2-9DC5-35AB5BBDD86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25853FB-A5A9-47C2-9DC5-35AB5BBDD86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25853FB-A5A9-47C2-9DC5-35AB5BBDD86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25853FB-A5A9-47C2-9DC5-35AB5BBDD86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA3C443-9D1C-481F-8DEC-4EE419FB02D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA3C443-9D1C-481F-8DEC-4EE419FB02D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA3C443-9D1C-481F-8DEC-4EE419FB02D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA3C443-9D1C-481F-8DEC-4EE419FB02D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A3852A-BD6E-4F37-826D-645EFA869719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A3852A-BD6E-4F37-826D-645EFA869719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A3852A-BD6E-4F37-826D-645EFA869719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A3852A-BD6E-4F37-826D-645EFA869719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17DFB5DB-2AB8-4AAB-B3F3-193FD1531F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17DFB5DB-2AB8-4AAB-B3F3-193FD1531F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17DFB5DB-2AB8-4AAB-B3F3-193FD1531F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17DFB5DB-2AB8-4AAB-B3F3-193FD1531F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12E6819-D87A-4D05-A40B-5B3B15EAC1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12E6819-D87A-4D05-A40B-5B3B15EAC1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12E6819-D87A-4D05-A40B-5B3B15EAC1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12E6819-D87A-4D05-A40B-5B3B15EAC1B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {589CA690-611A-48C6-B6DE-D7823376ACDE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\bin\Debug\net6.0\YemekTarifGenerator.Domain.deps.json
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\bin\Debug\net6.0\YemekTarifGenerator.Domain.runtimeconfig.json
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\bin\Debug\net6.0\YemekTarifGenerator.Domain.dll
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\bin\Debug\net6.0\YemekTarifGenerator.Domain.pdb
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\bin\Debug\net6.0\YemekTarifGenerator.Common.dll
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\bin\Debug\net6.0\YemekTarifGenerator.Common.pdb
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.csproj.AssemblyReference.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.AssemblyInfoInputs.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.AssemblyInfo.cs
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.csproj.CopyComplete
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.dll
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\refint\YemekTarifGenerator.Domain.dll
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.pdb
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\YemekTarifGenerator.Domain.genruntimeconfig.cache
+C:\Users\Berkay\source\repos\YemekTarifGenerator\YemekTarifGenerator.Domain\obj\Debug\net6.0\ref\YemekTarifGenerator.Domain.dll
