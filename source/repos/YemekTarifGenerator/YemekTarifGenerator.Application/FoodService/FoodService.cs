@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YemekTarifGenerator.Contract.Response;
+﻿using YemekTarifGenerator.Domain.Entities;
 using YemekTarifiContext.Contract.Request;
 using YemekTarifiContext.Data.Repositories.Abstract;
 using YemekTarifiContext.Domain.Entities;
@@ -17,9 +12,15 @@ namespace YemekTarifiContext.Application.FoodService
         {
             this.foodRepository = foodRepository;
         }
-        public async Task<IReadOnlyList<Food>> GetAllFoodAsync(FoodQueryRequest request)
+
+        public RepositoryResult CreateFoodWithMaterials(FoodCreationModelRequest request)
         {
-            return await this.foodRepository.GetAllFoodAsync(request);
+            return this.foodRepository.CreateFoodWithMaterials(request);
+        }
+
+        public List<Food> GetAllFood()
+        {
+            return this.foodRepository.GetAllFood();
         }
     }
 }

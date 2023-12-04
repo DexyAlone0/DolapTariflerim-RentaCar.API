@@ -1,20 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Query;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-
-using System.Runtime.ConstrainedExecution;
-using System.Text;
-using System.Threading.Tasks;
-
-using TnActivationCore.Repository.Mssql.GenericRepository;
-using YemekTarifGenerator.Contract.Response;
+﻿using TnActivationCore.Repository.Mssql.GenericRepository;
+using YemekTarifGenerator.Domain.Entities;
 using YemekTarifiContext.Contract.Request;
+using YemekTarifiContext.Data.Context;
 using YemekTarifiContext.Data.Repositories.Abstract;
 using YemekTarifiContext.Domain.Entities;
-using YemekTarifiContext.Data.Context;
 
 namespace YemekTarifiContext.Data.Repositories.Concrete
 {
@@ -24,17 +13,51 @@ namespace YemekTarifiContext.Data.Repositories.Concrete
         private readonly YemekTarifiGeneratorContext dbContext;
 
 
-        public FoodRepository(IGenericRepository genericRepository , YemekTarifiGeneratorContext dbContext)
+        public FoodRepository(IGenericRepository genericRepository, YemekTarifiGeneratorContext dbContext)
         {
             this.genericRepository = genericRepository;
             this.dbContext = dbContext;
         }
 
+        public RepositoryResult CreateFoodWithMaterials(FoodCreationModelRequest request)
+        {
+            var result = new RepositoryResult();
+
+
+            using (var transaction = dbContext.Database.BeginTransaction())
+            {
+                try
+                {
+                    var omelette = new Food { FoodName = request.FoodName , FoodRecipe = request.Recipe};
+
+                    omelette.FoodMaterials = request.Materials.Select(material =>
+                        new FoodMaterial { Material = new Material { MaterialName = material } }).ToList();
+
+                    dbContext.Foods.Add(omelette);
+                    dbContext.SaveChanges();
+
+                    transaction.Commit();
+
+                    result.IsSuccess = true;
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    result.ErrorMessage = $"Hata oluştu: {ex.Message}";
+                    return result;
+                }
+            }
+        }
+
+        public List<Food> GetAllFood()
+        {
+            this.dbContext.FoodMaterials.ToList();
+            return dbContext.Foods.ToList();
+            
+        }
         
 
-        public async Task<IReadOnlyList<FoodQueryRequest>> IFoodRepository.GetAllFoodAsync(FoodQueryRequest request)
-        {
-            Expression<Func<Food, bool>> expression = LinqExpressionBuilder.New<Food>(x => x.IsActive);
-        }
+
     }
 }

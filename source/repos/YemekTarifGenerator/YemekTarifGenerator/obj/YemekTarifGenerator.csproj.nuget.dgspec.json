@@ -44,10 +44,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0-preview3.23201.1, )"
@@ -150,10 +146,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -229,9 +221,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
+            "LinqKit": {
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[1.2.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -312,10 +304,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -401,9 +389,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
+            "LinqKit": {
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[1.2.5, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -418,6 +414,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.SqlServer.Server": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.Linq.Expressions": {
               "target": "Package",
@@ -488,10 +492,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -556,14 +556,23 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Berkay\\Desktop\\RentACar.Api-main (3)\\RentACar.Api-main\\TnActivationCore.Repository.Mssql\\TnActivationCore.Repository.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Berkay\\Desktop\\RentACar.Api-main (3)\\RentACar.Api-main\\TnActivationCore.Repository.Mssql\\TnActivationCore.Repository.Mssql.csproj"
+              },
               "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Application\\YemekTarifGenerator.Application.csproj": {
                 "projectPath": "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Application\\YemekTarifGenerator.Application.csproj"
+              },
+              "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Common\\YemekTarifGenerator.Common.csproj": {
+                "projectPath": "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Common\\YemekTarifGenerator.Common.csproj"
               },
               "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Contract\\YemekTarifGenerator.Contract.csproj": {
                 "projectPath": "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Contract\\YemekTarifGenerator.Contract.csproj"
               },
               "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Data\\YemekTarifGenerator.Data.csproj": {
                 "projectPath": "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Data\\YemekTarifGenerator.Data.csproj"
+              },
+              "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Domain\\YemekTarifGenerator.Domain.csproj": {
+                "projectPath": "C:\\Users\\Berkay\\source\\repos\\YemekTarifGenerator\\YemekTarifGenerator.Domain\\YemekTarifGenerator.Domain.csproj"
               }
             }
           }
@@ -578,10 +587,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -596,9 +601,29 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Newtonsoft": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [

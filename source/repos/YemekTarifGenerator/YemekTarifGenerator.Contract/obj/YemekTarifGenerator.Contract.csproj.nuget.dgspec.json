@@ -44,9 +44,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
+            "LinqKit": {
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[1.2.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -127,10 +127,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -210,10 +206,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"

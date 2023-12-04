@@ -44,10 +44,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0-preview3.23201.1, )"
@@ -150,10 +146,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -229,9 +221,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
+            "LinqKit": {
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[1.2.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -312,10 +304,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -401,9 +389,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
+            "LinqKit": {
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[1.2.5, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -418,6 +414,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.SqlServer.Server": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.Linq.Expressions": {
               "target": "Package",
@@ -488,10 +492,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "ExpressionBuilder": {
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"

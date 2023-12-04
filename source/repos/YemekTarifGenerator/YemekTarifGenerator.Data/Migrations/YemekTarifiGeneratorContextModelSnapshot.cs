@@ -23,51 +23,92 @@ namespace YemekTarifGenerator.Data.Migrations
 
             modelBuilder.Entity("YemekTarifiContext.Domain.Entities.Food", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("FoodID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FoodID"));
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FoodName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Recipe")
+                    b.Property<string>("FoodRecipe")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("FoodID");
 
                     b.ToTable("Foods");
                 });
 
-            modelBuilder.Entity("YemekTarifiContext.Domain.Entities.Material", b =>
+            modelBuilder.Entity("YemekTarifiContext.Domain.Entities.FoodMaterial", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("FoodMaterialID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FoodMaterialID"));
+
+                    b.Property<int>("FoodID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaterialID")
+                        .HasColumnType("int");
+
+                    b.HasKey("FoodMaterialID");
+
+                    b.HasIndex("FoodID");
+
+                    b.HasIndex("MaterialID");
+
+                    b.ToTable("FoodMaterials");
+                });
+
+            modelBuilder.Entity("YemekTarifiContext.Domain.Entities.Material", b =>
+                {
+                    b.Property<int>("MaterialID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaterialID"));
+
+                    b.Property<string>("MaterialName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MaterialID");
 
                     b.ToTable("Materials");
                 });
 
-            modelBuilder.Entity("YemekTarifiContext.Domain.Entities.Material", b =>
+            modelBuilder.Entity("YemekTarifiContext.Domain.Entities.FoodMaterial", b =>
                 {
-                    b.HasOne("YemekTarifiContext.Domain.Entities.Food", null)
-                        .WithMany("Materials")
-                        .HasForeignKey("Id")
+                    b.HasOne("YemekTarifiContext.Domain.Entities.Food", "Food")
+                        .WithMany("FoodMaterials")
+                        .HasForeignKey("FoodID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("YemekTarifiContext.Domain.Entities.Material", "Material")
+                        .WithMany("FoodMaterials")
+                        .HasForeignKey("MaterialID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Food");
+
+                    b.Navigation("Material");
                 });
 
             modelBuilder.Entity("YemekTarifiContext.Domain.Entities.Food", b =>
                 {
-                    b.Navigation("Materials");
+                    b.Navigation("FoodMaterials");
+                });
+
+            modelBuilder.Entity("YemekTarifiContext.Domain.Entities.Material", b =>
+                {
+                    b.Navigation("FoodMaterials");
                 });
 #pragma warning restore 612, 618
         }

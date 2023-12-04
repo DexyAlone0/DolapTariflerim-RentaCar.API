@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YemekTarifiContext.Application.UserService
+﻿namespace YemekTarifiContext.Application.UserService
 {
-    public class UserService
+    public class UserService : IUserService
     {
     }
 }

@@ -7,20 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExpressionBuilder" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\RentACar.Api-main (3)\RentACar.Api-main\TnActivationCore.Repository.Mssql\TnActivationCore.Repository.Mssql.csproj" />
     <ProjectReference Include="..\YemekTarifGenerator.Application\YemekTarifGenerator.Application.csproj" />
+    <ProjectReference Include="..\YemekTarifGenerator.Common\YemekTarifGenerator.Common.csproj" />
     <ProjectReference Include="..\YemekTarifGenerator.Contract\YemekTarifGenerator.Contract.csproj" />
     <ProjectReference Include="..\YemekTarifGenerator.Data\YemekTarifGenerator.Data.csproj" />
+    <ProjectReference Include="..\YemekTarifGenerator.Domain\YemekTarifGenerator.Domain.csproj" />
   </ItemGroup>
 
 </Project>

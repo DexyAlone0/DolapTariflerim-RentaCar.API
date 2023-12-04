@@ -1,22 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YemekTarifiContext.Domain.Entities
+﻿namespace YemekTarifiContext.Domain.Entities
 {
+    // Food sınıfı
+    // Food.cs
     public class Food
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Recipe { get; set; }
-        public virtual List<Material> Materials { get; set; }
+        public int FoodID { get; set; }
+        public string FoodName { get; set; }
+        public string FoodRecipe { get; set; }
+        public List<FoodMaterial> FoodMaterials { get; set; }
     }
 
+    // Material.cs
     public class Material
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int MaterialID { get; set; }
+        public string MaterialName { get; set; }
+        public ICollection<FoodMaterial> FoodMaterials { get; set; }
     }
+
+    // FoodMaterial.cs
+    public class FoodMaterial
+    {
+        public int FoodMaterialID { get; set; }
+        public int FoodID { get; set; }
+        public Food Food { get; set; }
+        public int MaterialID { get; set; }
+        public Material Material { get; set; }
+    }
+
 }
+

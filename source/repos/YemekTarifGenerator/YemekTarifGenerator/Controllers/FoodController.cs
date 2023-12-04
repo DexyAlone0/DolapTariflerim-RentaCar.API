@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
-using YemekTarifGenerator.Contract.Response;
+using YemekTarifGenerator.Domain.Entities;
 using YemekTarifiContext.Application.FoodService;
 using YemekTarifiContext.Contract.Request;
+using YemekTarifiContext.Data.Context;
 using YemekTarifiContext.Domain.Entities;
 
 namespace YemekTarifiContext.Controllers
@@ -10,18 +10,27 @@ namespace YemekTarifiContext.Controllers
     public class FoodController : ControllerBase
     {
         private readonly IFoodService foodService;
-        public FoodController(IFoodService foodService)
-        {
-                this.foodService = foodService;
-        }
+        private readonly YemekTarifiGeneratorContext yemekTarifiGeneratorContext;
 
+        public FoodController(IFoodService foodService, YemekTarifiGeneratorContext yemekTarifiGeneratorContext)
+        {
+            this.foodService = foodService;
+            this.yemekTarifiGeneratorContext = yemekTarifiGeneratorContext;
+        }
         [Route("getAllFood")]
         [HttpGet]
-
-        public async Task<IReadOnlyList<Food>> GetAllFoodAsync(FoodQueryRequest request)
+        public List<Food> GetAllFood()
         {
-           return await this.foodService.GetAllFoodAsync(request);
+            return this.foodService.GetAllFood();
         }
+        [Route("api/[controller]")]
+        [HttpPost]
+        public RepositoryResult CreateFoodWithMaterials(FoodCreationModelRequest request)
+        {
+            return this.foodService.CreateFoodWithMaterials(request);
+        }
+
+
 
 
 
