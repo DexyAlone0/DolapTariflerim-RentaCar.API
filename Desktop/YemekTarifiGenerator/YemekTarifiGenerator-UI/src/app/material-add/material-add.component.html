@@ -1,0 +1,93 @@
+<style>
+  .product-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .product-name {
+        margin-right: 10px;
+      }
+
+      .delete-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+
+   textarea {
+   text-align: center;
+   height: 500px;
+   width: 700px;
+    resize: horizontal; /* Yatay boyutlandırmaya izin ver */
+  }
+
+      .product-image-container {
+        max-width: 200px; /* veya başka bir değer */
+        max-height: 200px; /* veya başka bir değer */
+        overflow: hidden;
+      }
+
+      .product-image {
+        width: 30px;
+        height: 20px;
+      }
+      .btn-danger {
+        width: 20px;
+        height: 30px;
+      }
+      .bold {
+        text-align: center;
+      }
+      .italic-bold {
+        font-size: large;
+      }
+      /* Kutu içeriği */
+    .box-content {
+      text-align: center;
+    }
+
+    /* Text box stilleri */
+    .awesome-textbox {
+      padding: 10px;
+      border: 2px solid #1bad44;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      width: 300px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    /* Text box odaklandığında stil değişikliği */
+    .awesome-textbox:focus {
+      border-color: #0f4230;
+      box-shadow: 0 0 10px rgba(231, 76, 60, 0.6);
+    }
+
+    /* Buton stilleri */
+    .awesome-button {
+      background-color: #c4d830;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Buton hover efekti */
+    .awesome-button:hover {
+      background-color: #00fa36;
+    }
+</style>
+
+<div class="box-content">
+  <input id="foodName" [(ngModel)]="materialName" class="awesome-textbox" type="text" placeholder="Malzeme girin."> &nbsp;
+  <br>
+  <button (click)="createMaterial()" class="awesome-button">Ekle</button>
+</div>
+

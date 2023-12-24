@@ -1,0 +1,33 @@
+
+<ul>
+  <li *ngFor="let material of materials">
+    <input type="checkbox" [(ngModel)]="material.isChecked" (change)="onCheckboxChange(material.id)" />
+    {{ material.name }}
+  </li>
+  <button (click)="onSearch()"><b>Yemekleri Getir </b></button>
+</ul>
+<h1 class="italic-bold">Tarifler</h1>
+<div *ngFor="let food of foods">
+  <<div class="container">
+    <div class="row justify-content-end">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{food.foodName}}</h5>
+            <p class="card-text">{{food.materialNames}}</p>
+            <button type="button" class="btn btn-primary">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<!-- "Yemekleri Getir" Butonu -->

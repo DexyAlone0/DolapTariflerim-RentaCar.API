@@ -1,0 +1,58 @@
+<style>
+ul {
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #27ae60;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 14px 16px;
+
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+
+  background-color: #111;
+}
+
+.active {
+
+  background-color: #f39c12;
+}
+</style>
+
+
+<ul>
+
+  <li><a class="aktif" href="/malzemeler">Tarif Oluştur</a></li>
+
+  <li><a href="/yemek">Yemek</a></li>
+
+  <li><a href="/buzdolabı">Buzdolabı</a></li>
+
+  <li><a href="/yemek-olustur">Yemek ekle</a></li>
+
+  <li><a href="/malzeme-olustur">Malzeme ekle</a></li>
+
+</ul>
+
+
+
+<router-outlet></router-outlet>
